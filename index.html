@@ -424,11 +424,59 @@
             </li>
           </ul>
         </div>
+
+        <form class="form-footer js-speaker-form">
+          <p class="form-text">Подпишитесь на рассылку</p>
+          <div class="subscription">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail" class="input-footer" />
+            <button type="submit" class="footer-button">
+              Подписаться<svg width="24" height="24">
+                <use></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form action="#" class="form js-speaker-form">
+          <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-group">
+            <label for="user-name" class="form-label">Имя</label>
+            <input type="text" name="user-name" id="user-name" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="user-tel" class="form-label">Телефон</label>
+            <input type="tel" name="user-tel" id="user-tel" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="user-mail" class="form-label">Почта</label>
+            <input type="email" name="user-mail" id="user-mail" class="form-input" />
+          </div>
+          <div class="form-group-textarea">
+            <label for="user-comment" class="form-label">Комментарий</label>
+            <textarea
+              name="comment"
+              id="user-comment"
+              placeholder="Введите текст"
+              class="form-textarea"
+            ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <p>
+              <input type="checkbox" name="policy" id="policy" /><label
+                for="policy"
+                class="label-checkbox"
+                >Соглашаюсь с рассылкой и принимаю</label
+              >
+              <a href="#" class="policy">Условия договора</a>
+            </p>
+          </div>
+          <button type="submit" class="modal-form-button">Отправить</button>
+        </form>
         <button class="close-modal" data-modal-close>
           <svg class="close" width="11" height="11">
             <use href="./images/close.svg#icon-close"></use>
@@ -438,5 +486,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
