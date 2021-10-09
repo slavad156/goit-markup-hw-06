@@ -437,8 +437,9 @@
               class="input-footer"
             />
             <button type="submit" class="footer-button">
-              Подписаться<svg width="24" height="24">
-                <use></use>
+              <span class="footer-button-text">Подписаться</span
+              ><svg width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
           </div>
@@ -452,15 +453,30 @@
           <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-group">
             <label for="user-name" class="form-label">Имя</label>
-            <input type="text" name="name" id="user-name" class="form-input" />
+            <span class="input-thumb">
+              <input type="text" name="name" id="user-name" class="form-input" />
+              <svg class="form-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-form-name"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-group">
             <label for="user-tel" class="form-label">Телефон</label>
-            <input type="tel" name="phone" id="user-tel" class="form-input" autofocus />
+            <span class="input-thumb">
+              <input type="tel" name="phone" id="user-tel" class="form-input" />
+              <svg class="form-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-form-tel"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-group">
             <label for="user-mail" class="form-label">Почта</label>
-            <input type="email" name="e-mail" id="user-mail" class="form-input" />
+            <span class="input-thumb">
+              <input type="email" name="e-mail" id="user-mail" class="form-input" />
+              <svg class="form-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-form-mail"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-group-textarea">
             <label for="user-comment" class="form-label">Комментарий</label>
@@ -472,10 +488,11 @@
             ></textarea>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" name="policy" id="policy" /><label
+            <input type="checkbox" name="policy" id="policy" class="checkbox" /><label
               for="policy"
               class="label-checkbox"
-              >Соглашаюсь с рассылкой и принимаю
+            >
+              Соглашаюсь с рассылкой и принимаю&nbsp
               <a href="#" class="policy">Условия договора</a></label
             >
           </div>
