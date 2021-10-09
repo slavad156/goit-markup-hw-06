@@ -964,6 +964,8 @@ img {
   text-decoration-line: underline;
 
   color: var(--accent);
+
+  margin-left: 5px;
 }
 
 .modal-form-button {
