@@ -1035,17 +1035,10 @@ img {
   border: 2px solid var(--secondary-color-text);
   border-radius: 2px;
   margin-right: 7px;
+  transition: background-color 250ms var(--time-animation);
 }
 
-.checkbox:checked + .label-checkbox::before {
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border: none;
-  background-color: var(--accent);
-  margin-right: 7px;
-}
-
+.checkbox:checked + .label-checkbox::before,
 .checkbox:checked:focus + .label-checkbox::before {
   background-image: url(../images/icon-check.svg);
   background-size: contain;
